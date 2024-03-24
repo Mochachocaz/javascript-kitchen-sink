@@ -35,3 +35,27 @@ let pet = {
     breed: 'Groodle',
 };
 console.log(pet.name, pet.breed);
+
+let people = [
+    {name: "Trent", age: 29},
+    {name: "Bryan", age: 16},
+    {name: "Sam", age: 29},
+    {name: "Luke", age: 28},
+    {name: "Pete", age: 15}
+];
+
+for (let person of people) {
+    checkAge(person.name, person.age);
+}
+
+function Getlength(word) {
+    return word.length;
+}
+
+var lengthofhelloworld = Getlength('Hello World');
+
+if (lengthofhelloworld % 2 === 0) {
+    console.log('The world is nice and even!'); 
+} else {
+    console.log('The world is an odd place!');
+}
