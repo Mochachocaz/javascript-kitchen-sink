@@ -8,3 +8,30 @@ function sayHello() {
     alert('Hello World!')
 };
 sayHello();
+
+function checkAge(name, age) {
+    if (age <21) {
+        alert("Sorry " + name + ", you aren't old enogh to view this page!");
+    }
+}
+
+// checking the below four names against the checkAge function
+checkAge("Charles", 21); 
+checkAge("Abby", 27);
+checkAge("James", 18);
+checkAge("John", 17);
+
+let FavouriteVegetables = ['carrots', 'lettuce', 'broccoli'];
+
+for(let i = 0; i < FavouriteVegetables.length; i++) {
+    console.log(FavouriteVegetables[i]);
+}
+// in this loop, i starts at 0 and increments by 1 until it reaches the last indec of the favouriteVegatables array
+// favouriteVegetables[i] accesses each vegetable in the array
+// console.log(favouriteVegetables[i]) displayes the name of each vegetable in the console
+
+let pet = {
+    name: "Winston",
+    breed: 'Groodle',
+};
+console.log(pet.name, pet.breed);
